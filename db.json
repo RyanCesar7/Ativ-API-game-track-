@@ -1,0 +1,52 @@
+{
+  "jogos": [
+    {
+      "id": "1",
+      "titulo": "Minecraft",
+      "genero": "Sandbox",
+      "plataforma": "PC",
+      "nota": 9,
+      "status": "Jogando"
+    },
+    {
+      "id": "2",
+      "titulo": "Hollow Knight",
+      "genero": "Metroidvania",
+      "plataforma": "PC",
+      "nota": 10,
+      "status": "Finalizado"
+    },
+    {
+      "id": "3",
+      "titulo": "Forza Horizon 5",
+      "genero": "Corrida",
+      "plataforma": "Xbox",
+      "nota": 8,
+      "status": "Quero jogar"
+    },
+    {
+      "id": "4",
+      "titulo": "Red Dead Redemption 2",
+      "genero": "Ação",
+      "plataforma": "PC",
+      "nota": 9.5,
+      "status": "Finalizado"
+    },
+    {
+      "id": "5",
+      "titulo": "GTA V",
+      "genero": "Ação",
+      "plataforma": "PC",
+      "nota": 9,
+      "status": "Jogando"
+    },
+    {
+      "id": "6",
+      "titulo": "God of War Ragnarök",
+      "genero": "Ação",
+      "plataforma": "PlayStation",
+      "nota": 9.5,
+      "status": "Quero jogar"
+    }
+  ]
+}

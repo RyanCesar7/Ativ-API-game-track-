@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameTrack - Biblioteca de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topo">
+        <div>
+            <h1>🎮 GameTrack</h1>
+            <p>Sua biblioteca de jogos</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="dashboard">
+            <div class="stat-card">
+                <span>Total de jogos</span>
+                <strong id="totalJogos">0</strong>
+            </div>
+            <div class="stat-card">
+                <span>Jogando</span>
+                <strong id="totalJogando">0</strong>
+            </div>
+            <div class="stat-card">
+                <span>Finalizados</span>
+                <strong id="totalFinalizados">0</strong>
+            </div>
+            <div class="stat-card">
+                <span>Média das notas</span>
+                <strong id="mediaNotas">0</strong>
+            </div>
+        </section>
+
+        <section class="controles">
+            <input type="text" id="pesquisa" placeholder="Pesquisar jogo pelo título...">
+            <select id="filtroStatus">
+                <option value="Todos">Todos</option>
+                <option value="Quero jogar">Quero jogar</option>
+                <option value="Jogando">Jogando</option>
+                <option value="Finalizado">Finalizado</option>
+                <option value="Abandonado">Abandonado</option>
+            </select>
+        </section>
+
+        <p id="mensagem" class="mensagem"></p>
+
+        <section class="layout">
+            <section>
+                <h2>Jogos cadastrados</h2>
+                <div id="listaJogos" class="lista-jogos"></div>
+            </section>
+
+            <section class="formulario-container">
+                <h2 id="tituloFormulario">Cadastrar jogo</h2>
+                <form id="formJogo">
+                    <input type="hidden" id="idJogo">
+
+                    <label for="titulo">Título</label>
+                    <input type="text" id="titulo" required>
+
+                    <label for="genero">Gênero</label>
+                    <input type="text" id="genero" required>
+
+                    <label for="plataforma">Plataforma</label>
+                    <input type="text" id="plataforma" required>
+
+                    <label for="nota">Nota (0 a 10)</label>
+                    <input type="number" id="nota" min="0" max="10" step="0.1" required>
+
+                    <label for="status">Status</label>
+                    <select id="status" required>
+                        <option value="">Selecione</option>
+                        <option value="Quero jogar">Quero jogar</option>
+                        <option value="Jogando">Jogando</option>
+                        <option value="Finalizado">Finalizado</option>
+                        <option value="Abandonado">Abandonado</option>
+                    </select>
+
+                    <div class="botoes-form">
+                        <button type="submit" id="botaoSalvar">Cadastrar</button>
+                        <button type="button" id="botaoCancelar" class="secundario">Cancelar</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

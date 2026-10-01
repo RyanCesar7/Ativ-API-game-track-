@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f4f6;
+    color: #1f2937;
+}
+
+.topo {
+    background: #111827;
+    color: white;
+    padding: 28px 20px;
+}
+
+.topo div {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.topo h1 {
+    margin-bottom: 5px;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.stat-card span {
+    display: block;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.stat-card strong {
+    font-size: 28px;
+}
+
+.controles {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.controles input,
+.controles select,
+.formulario-container input,
+.formulario-container select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.controles input {
+    flex: 1;
+}
+
+.controles select {
+    max-width: 230px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.lista-jogos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+}
+
+.card h3 {
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #6b7280;
+    margin: 5px 0;
+}
+
+.nota {
+    font-weight: bold;
+    color: #111827 !important;
+}
+
+.status {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #e5e7eb;
+    font-size: 13px;
+}
+
+.acoes {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+button.excluir {
+    background: #dc2626;
+}
+
+button.secundario {
+    background: #6b7280;
+}
+
+.formulario-container {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    height: fit-content;
+}
+
+.formulario-container label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+.botoes-form {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.mensagem {
+    min-height: 22px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.mensagem.sucesso {
+    color: #15803d;
+}
+
+.mensagem.erro {
+    color: #dc2626;
+}
+
+.vazio {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    color: #6b7280;
+}
+
+@media (max-width: 800px) {
+    .dashboard,
+    .layout,
+    .lista-jogos {
+        grid-template-columns: 1fr;
+    }
+
+    .controles {
+        flex-direction: column;
+    }
+
+    .controles select {
+        max-width: none;
+    }
+}
